@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+   /* O " * " aplica a configuração declarada em todo o código do site, neste caso faz a margem e padding ficar zerado, resetando os valores  */
+
+body {
+    background-color: #040D12;
+	background-image: url(./image/space.jpg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px
+}
+    /* Aqui aplica atributos em toda a página, fontes, fundo e cor */
+
+#logo {
+    height: 100px;
+    margin: 15px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#header {
+    /* background-image: url(./images/cenario_mada.jpg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+    
+    display: flex;         
+}
+
+.naveg {
+    position: relative;
+    top: 40px;
+    overflow: initial;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.menu {
+    list-style: none; /* Aplica estilo do formato que vai ser apresentado o menu */
+    border: 0 solid #c0c0c0; /* Aplica borda nos itens do menu */
+    float: left; /* Aplica uma posição para o menu */
+}
+    /* Formatação inicial do menu */
+
+.menu li {
+    position: relative; /* Posição do botão referente ao espaço do site, tamanho da janela do navegador */
+    float: left; /* Alinhamento do item dmenu */
+    border: 1px solid #c0c0c0;
+}
+    /* Aplica uma ação quando o mouse passa por cima do item do menu, recebe herança de .menu para li */
+
+.menu li a {
+    color: #868686;
+    text-decoration: none; /* Declaração obrigatória */
+    padding: 5px 10px;
+    display: block;
+}
+ /* Aplica atributo ao link do menu " a " */
+
+.menu li a:hover {
+    background: #333;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px #ccc; /* Aplica sombra aos itens do menu */
+    -webkit-box-shadow: 0 3px 10px #41c1f3; /* Trabalha junto sempre com o -moz */
+    text-shadow: 0 0 5px;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #180101;
+    display: none;
+}
+ /* Formatação primária de todo o menu, cor e posição */
+
+.menu li:hover ul, .menu li.over ul {
+    display: block;
+}
+ /* Formatação hover= quando passa o mouse por cima, over=quando clica no botão do menu */
+
+.menu li ul li {
+    border: 1px solid #c0c0c0; /* Aplica borda em cada item da cortina */
+    display: block;
+    width: 150px;
+}
+
+footer {
+	color: white;
+/*	border: 14px solid transparent;*/
+	font-family: verdana;
+	font-size: 12px;
+}
+
+#tarja {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+	background-color: #000;
+	color: white;
+	/* text-align: center; */
+	font-family: verdana;
+	font-size: 24px;
+	/* width: 600px; */
+	border: 3px solid #52bbbb;
+	box-shadow: 0 8px 16px 0 rgba(#2ab9b9 1.0);
+}
+
+main {
+    position:unset;
+    justify-content: center;
+    align-items: center;
+
+}
